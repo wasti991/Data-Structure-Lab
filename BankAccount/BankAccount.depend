@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1697038711 source:d:\codeblock\bankaccount\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+

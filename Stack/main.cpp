@@ -21,11 +21,13 @@ int main() {
 
     // Remove the lowest element from the initial stack
     std::stack<int> tempStack;
-    while (!myStack.empty()) {
-        if (myStack.top() != lowest) {
+    while (!myStack.empty())   // !myStack.empty() returns true if the stack myStack is not empty and false otherwise
+    {
+        if (myStack.top() != lowest)    //myStack.top() is top element of the stack
+        {
             tempStack.push(myStack.top());
         }
-        myStack.pop();
+        myStack.pop();      //myStack.pop() is used to remove and return the object at the top of the Stack.
     }
 
     // Display the remaining elements in the initial stack

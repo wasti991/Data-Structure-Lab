@@ -21,9 +21,9 @@ int main() {
 
     // Remove the lowest element from the initial stack
     std::stack<int> tempStack;
-    while (!myStack.empty())   // !myStack.empty() returns true if the stack myStack is not empty and false otherwise
+    while (!myStack.empty())   // !myStack.empty() returns true if the stack myStack is not empty and false otherwise.
     {
-        if (myStack.top() != lowest)    //myStack.top() is top element of the stack
+        if (myStack.top() != lowest)    //myStack.top() is top element of the stack.
         {
             tempStack.push(myStack.top());
         }
@@ -32,7 +32,8 @@ int main() {
 
     // Display the remaining elements in the initial stack
     std::cout << "Remaining elements in the initial stack: ";
-    while (!tempStack.empty()) {
+    while (!tempStack.empty())     //!tempStack.empty() is returned true if the stack is not emply,and false otherwise.
+    {
         std::cout << tempStack.top() << " ";
         myStack.push(tempStack.top());
         tempStack.pop();

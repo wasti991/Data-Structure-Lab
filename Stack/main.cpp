@@ -13,7 +13,7 @@ int main() {
         int element;
         std::cout << "Enter element " << i + 1 << ": ";
         std::cin >> element;
-        myStack.push(element);
+        myStack.push(element);  //myStack.push(element) is to insert an element at the top of the stack
         if (element < lowest) {
             lowest = element;
         }
